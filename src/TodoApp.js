@@ -41,7 +41,7 @@ const TodoApp = ()=>{
     );
     const onRemove = useCallback(
         (id)=>{
-            setTodos(todos.filter((todo)=> todo.id ! == id));
+            setTodos(todos.filter((todo)=> todo.id !== id));
         },
         [todos]
     )
