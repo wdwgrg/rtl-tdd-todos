@@ -8,7 +8,7 @@ const TodosFrom = ({onInsert}) => {
     
     const onSubmit = useCallback(e=>{
         onInsert(value);
-        setValue('');
+        setValue("");
         e.preventDefault();
     },[onInsert,value]);
     
